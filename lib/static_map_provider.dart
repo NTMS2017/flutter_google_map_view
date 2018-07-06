@@ -40,8 +40,13 @@ class StaticMapProvider {
 
   Uri getStaticUriWithMarkers(List<Marker> markers,
       {int width, int height, StaticMapViewType maptype, Location center}) {
-    return _buildUrl(markers, center, null, width ?? defaultWidth,
-        height ?? defaultHeight, maptype ?? defaultMaptype);
+    return _buildUrl(
+      markers, 
+      center, 
+      null, 
+      width ?? defaultWidth,
+      height ?? defaultHeight, 
+      maptype ?? defaultMaptype);
   }
 
   ///
